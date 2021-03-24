@@ -1,5 +1,6 @@
 from rest_framework.permissions import BasePermission, SAFE_METHODS
 
+
 class ContentPermission(BasePermission):
     """
     Allows access only to users in 'client' group
@@ -11,6 +12,6 @@ class ContentPermission(BasePermission):
         return not request.user.is_anonymous
 
     def has_object_permission(self, request, view, obj):
-        if request.user.is_admin_user or request.user==obj.author:
+        if request.user.is_admin_user or request.user == obj.author:
             return True
         return False

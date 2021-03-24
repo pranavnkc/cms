@@ -142,5 +142,5 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'accounts.validators.LowercaseValidator',
     },
-    
+
 ]

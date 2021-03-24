@@ -4,5 +4,3 @@ router = routers.DefaultRouter()
 router.register(r'content', ContentViewSet, basename="content")
 
 urlpatterns = router.urls
-
-

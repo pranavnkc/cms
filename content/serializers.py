@@ -3,16 +3,18 @@ from rest_framework import serializers
 
 from .models import Content
 
+
 class ContentSerializer(serializers.ModelSerializer):
     categories = serializers.ListField(
         child=serializers.CharField(), write_only=True
     )
+
     class Meta:
         model = Content
         fields = "__all__"
         read_only_fields = ("author", )
         extra_kwargs = {
-            "document":{"required": True}
+            "document": {"required": True}
         }
 
     def create(self, validated_data, *args, **kwargs):

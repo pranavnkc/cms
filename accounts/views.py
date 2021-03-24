@@ -34,5 +34,3 @@ class CustomAuthToken(ObtainAuthToken):
         if not request.user.is_anonymous and request.user.auth_token:
             request.user.auth_token.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-        
-            
