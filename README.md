@@ -56,6 +56,7 @@ In all paths containing a `PK`, replace the `PK` by the primary key
 | Path                  | Description                                                             | Methods                   |
 | --------------------- | ----------------------------------------------------------------------- | --------------------------|
 | /api/token            | Used by the user to get authenticaton token                             | POST                      |
+| /api/token            | Used by the user to logout                                              | DELETE                      |
 | /api/user/            | Used by a new user to register and be able to log in                    | POST                      |
 | /api/content          | List all content and allows you to create some                          | GET / POST                |
 | /api/v1/content/PK    | Allows a basic CRUD on a specific content                               | GET / PUT / PATCH/ DELETE |
