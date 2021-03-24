@@ -59,3 +59,7 @@ In all paths containing a `PK`, replace the `PK` by the primary key
 | /api/user/            | Used by a new user to register and be able to log in                    | POST                      |
 | /api/content          | List all content and allows you to create some                          | GET / POST                |
 | /api/v1/content/PK    | Allows a basic CRUD on a specific content                               | GET / PUT / PATCH/ DELETE |
+
+#TO seed admin
+
+python3 manage.py loaddata seed/Admin.json

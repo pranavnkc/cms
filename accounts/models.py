@@ -16,7 +16,7 @@ class CMSUser(AbstractUser):
     pincode = models.IntegerField(validators=[MinValueValidator(100000), MaxValueValidator(999999)])
     
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['first_name', 'last_name']
+    REQUIRED_FIELDS = ['first_name', 'last_name', 'phone_number', 'pincode']
 
 
     objects = CustomUserManager()

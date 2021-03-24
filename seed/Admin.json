@@ -1,0 +1,25 @@
+[
+{
+    "model": "accounts.cmsuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$kTCG7bL7usyc$R6EKVX6A6AEjAzu5AGNWT2YNCAvUR7d2QZ6/zXeDRs0=",
+        "last_login": null,
+        "is_superuser": true,
+        "first_name": "cms",
+        "last_name": "admin",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-03-24T09:56:21.405Z",
+        "email": "cms@admin.com",
+        "phone_number": 1111111111,
+        "address": null,
+        "city": null,
+        "state": null,
+        "country": null,
+        "pincode": 111111,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
